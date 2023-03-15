@@ -1,0 +1,206 @@
+Configuration	CubeMX
+STM32CubeMX 	6.6.1
+Date	12/29/2022
+MCU	STM32F100VETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Input	Button STOP
+2	PE3	GPIO_Input	Button M1
+3	PE4	GPIO_Input	Button M2
+4	PE5	GPIO_Input	Button M3
+5	PE6	GPIO_Input	Button M4
+7	PC13-TAMPER-RTC	GPIO_Input	Button M5
+8	PC14-OSC32_IN	GPIO_Input	Button M6
+9	PC15-OSC32_OUT	GPIO_Input	Button M7
+15	PC0	GPIO_Input	Button M8
+16	PC1	GPIO_Input	Button M9 Forvard
+17	PC2	GPIO_Input	Button M9 Revers
+18	PC3	GPIO_Input	Button M10, M11, M12
+23	PA0-WKUP	GPIO_Input	SUM M3
+24	PA1	GPIO_Input	SUM M5
+25	PA2	GPIO_Input	SUM M6
+26	PA3	GPIO_Input	SUM M7
+29	PA4	GPIO_Input	SUM M8
+30	PA5	GPIO_Input	SUM M9 Forvard
+31	PA6	GPIO_Input	SUM M9 Revers
+32	PA7	GPIO_Input	Silos level 1 (Low)
+33	PC4	GPIO_Input	Silos level 2
+34	PC5	GPIO_Input	Silos level 3
+35	PB0	GPIO_Input	Silos level 4
+36	PB1	GPIO_Input	Silos level 5 (High)
+37	PB2	GPIO_Input	Boiler level Low
+38	PE7	GPIO_Input	Boiler Level High
+39	PE8	GPIO_Input	Pillet level Low
+40	PE9	GPIO_Input	Pillet level High
+41	PE10	GPIO_Input	Thermal M1
+42	PE11	GPIO_Input	Thermal M2
+43	PE12	GPIO_Input	Thermal M3
+44	PE13	GPIO_Input	Thermal M4
+45	PE14	GPIO_Input	Thermal M5
+46	PE15	GPIO_Input	Thermal M6
+47	PB10	GPIO_Input	Thermal M7
+48	PB11	GPIO_Input	Thermal M8
+51	PB12	GPIO_Input	Thermal M9
+52	PB13	GPIO_Input	Thermal M10
+53	PB14	GPIO_Input	Thermal M11
+54	PB15	GPIO_Input	Thermal M12
+55	PD8	GPIO_Input	Vibrator signal
+56	PD9	GPIO_Input	Gotvald Signal switch M1
+57	PD10	GPIO_Input	Gotvald signal door
+58	PD11	GPIO_Output	Lamp STOP
+59	PD12	GPIO_Output	Play M1
+60	PD13	GPIO_Output	Play M2
+61	PD14	GPIO_Output	Play M3
+62	PD15	GPIO_Output	Play M4
+63	PC6	GPIO_Output	Play M5
+64	PC7	GPIO_EXTI7	Play M6
+65	PC8	GPIO_Output	Play M7
+66	PC9	GPIO_Output	Play M8
+68	PA9	USART1_TX	
+69	PA10	USART1_RX	
+72	PA13*	SYS_JTMS-SWDIO	
+76	PA14*	SYS_JTCK-SWCLK	
+77	PA15	GPIO_Output	Play M9 Forvard
+78	PC10	GPIO_Output	Play M9 Revers
+79	PC11	GPIO_Output	Play M10
+80	PC12	GPIO_Output	Play M11
+81	PD0	GPIO_Output	Play M12
+82	PD1	GPIO_Output	Lamp M1
+83	PD2	GPIO_Output	Lamp M2
+84	PD3	GPIO_Output	Lamp M3
+85	PD4	GPIO_Output	Lamp M4
+86	PD5	GPIO_Output	Lamp M5
+87	PD6	GPIO_Output	Lamp M6
+88	PD7	GPIO_Output	Lamp M7
+89	PB3	GPIO_Output	Lamp M8
+90	PB4	GPIO_Output	Lamp M9
+91	PB5	GPIO_Input	Lamp M10
+92	PB6	GPIO_Input	Lamp M11
+93	PB7	GPIO_Input	Lamp M12
+95	PB8	GPIO_Input	Auto Boiler Basic
+96	PB9	GPIO_Input	Auto Boiler Reserv
+97	PE0	GPIO_Input	Auto Pillet Basic
+98	PE1	GPIO_Input	Auto Pillet Reserv
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Input	Button STOP
+2	PE3	GPIO_Input	Button M1
+3	PE4	GPIO_Input	Button M2
+4	PE5	GPIO_Input	Button M3
+5	PE6	GPIO_Input	Button M4
+7	PC13-TAMPER-RTC	GPIO_Input	Button M5
+8	PC14-OSC32_IN	GPIO_Input	Button M6
+9	PC15-OSC32_OUT	GPIO_Input	Button M7
+15	PC0	GPIO_Input	Button M8
+16	PC1	GPIO_Input	Button M9 Forvard
+17	PC2	GPIO_Input	Button M9 Revers
+18	PC3	GPIO_Input	Button M10, M11, M12
+23	PA0-WKUP	GPIO_Input	SUM M3
+24	PA1	GPIO_Input	SUM M5
+25	PA2	GPIO_Input	SUM M6
+26	PA3	GPIO_Input	SUM M7
+29	PA4	GPIO_Input	SUM M8
+30	PA5	GPIO_Input	SUM M9 Forvard
+31	PA6	GPIO_Input	SUM M9 Revers
+32	PA7	GPIO_Input	Silos level 1 (Low)
+33	PC4	GPIO_Input	Silos level 2
+34	PC5	GPIO_Input	Silos level 3
+35	PB0	GPIO_Input	Silos level 4
+36	PB1	GPIO_Input	Silos level 5 (High)
+37	PB2	GPIO_Input	Boiler level Low
+38	PE7	GPIO_Input	Boiler Level High
+39	PE8	GPIO_Input	Pillet level Low
+40	PE9	GPIO_Input	Pillet level High
+41	PE10	GPIO_Input	Thermal M1
+42	PE11	GPIO_Input	Thermal M2
+43	PE12	GPIO_Input	Thermal M3
+44	PE13	GPIO_Input	Thermal M4
+45	PE14	GPIO_Input	Thermal M5
+46	PE15	GPIO_Input	Thermal M6
+47	PB10	GPIO_Input	Thermal M7
+48	PB11	GPIO_Input	Thermal M8
+51	PB12	GPIO_Input	Thermal M9
+52	PB13	GPIO_Input	Thermal M10
+53	PB14	GPIO_Input	Thermal M11
+54	PB15	GPIO_Input	Thermal M12
+55	PD8	GPIO_Input	Vibrator signal
+56	PD9	GPIO_Input	Gotvald Signal switch M1
+57	PD10	GPIO_Input	Gotvald signal door
+58	PD11	GPIO_Output	Lamp STOP
+59	PD12	GPIO_Output	Play M1
+60	PD13	GPIO_Output	Play M2
+61	PD14	GPIO_Output	Play M3
+62	PD15	GPIO_Output	Play M4
+63	PC6	GPIO_Output	Play M5
+64	PC7	GPIO_EXTI7	Play M6
+65	PC8	GPIO_Output	Play M7
+66	PC9	GPIO_Output	Play M8
+68	PA9	USART1_TX	
+69	PA10	USART1_RX	
+72	PA13*	SYS_JTMS-SWDIO	
+76	PA14*	SYS_JTCK-SWCLK	
+77	PA15	GPIO_Output	Play M9 Forvard
+78	PC10	GPIO_Output	Play M9 Revers
+79	PC11	GPIO_Output	Play M10
+80	PC12	GPIO_Output	Play M11
+81	PD0	GPIO_Output	Play M12
+82	PD1	GPIO_Output	Lamp M1
+83	PD2	GPIO_Output	Lamp M2
+84	PD3	GPIO_Output	Lamp M3
+85	PD4	GPIO_Output	Lamp M4
+86	PD5	GPIO_Output	Lamp M5
+87	PD6	GPIO_Output	Lamp M6
+88	PD7	GPIO_Output	Lamp M7
+89	PB3	GPIO_Output	Lamp M8
+90	PB4	GPIO_Output	Lamp M9
+91	PB5	GPIO_Input	Lamp M10
+92	PB6	GPIO_Input	Lamp M11
+93	PB7	GPIO_Input	Lamp M12
+95	PB8	GPIO_Input	Auto Boiler Basic
+96	PB9	GPIO_Input	Auto Boiler Reserv
+97	PE0	GPIO_Input	Auto Pillet Basic
+98	PE1	GPIO_Input	Auto Pillet Reserv
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : CubeMX
+Project Folder : D:\job\Project_silos\mcprogramm\CubeMX
+Toolchain / IDE : EWARM V8.32
+Firmware Package Name and Version : STM32Cube FW_F1 V1.8.4
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
