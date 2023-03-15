@@ -57,10 +57,42 @@ NOP
 NOP
 ;MyProject.c,98 :: 		while(1)
 L_main2:
-;MyProject.c,102 :: 		}
+;MyProject.c,100 :: 		GPIOD_ODR.B11 = 1;
+MOVS	R1, #1
+SXTB	R1, R1
+MOVW	R0, #lo_addr(GPIOD_ODR+0)
+MOVT	R0, #hi_addr(GPIOD_ODR+0)
+_SX	[R0, ByteOffset(GPIOD_ODR+0)]
+;MyProject.c,101 :: 		delay_ms(1000);
+MOVW	R7, #45225
+MOVT	R7, #40
+NOP
+NOP
+L_main4:
+SUBS	R7, R7, #1
+BNE	L_main4
+NOP
+NOP
+;MyProject.c,102 :: 		GPIOD_ODR.B11 = 0;
+MOVS	R1, #0
+SXTB	R1, R1
+MOVW	R0, #lo_addr(GPIOD_ODR+0)
+MOVT	R0, #hi_addr(GPIOD_ODR+0)
+_SX	[R0, ByteOffset(GPIOD_ODR+0)]
+;MyProject.c,103 :: 		delay_ms(1000);
+MOVW	R7, #45225
+MOVT	R7, #40
+NOP
+NOP
+L_main6:
+SUBS	R7, R7, #1
+BNE	L_main6
+NOP
+NOP
+;MyProject.c,104 :: 		}
 IT	AL
 BAL	L_main2
-;MyProject.c,104 :: 		}
+;MyProject.c,106 :: 		}
 L_end_main:
 L__main_end_loop:
 B	L__main_end_loop

@@ -1,6 +1,6 @@
 #line 1 "D:/job/Project_silos/mcprogramm/STM32F100VE/MyProject.c"
-#line 1 "d:/job/project_silos/mcprogramm/stm32f100ve/digital.h"
-#line 3 "D:/job/Project_silos/mcprogramm/STM32F100VE/MyProject.c"
+
+
 void main() {
 
 
@@ -98,12 +98,10 @@ Delay_ms(100);
 
 while(1)
 {
-if ( .B15 _buttonM8 .B0==1 or  .B15 _playM9F .B1==1)
-{
-
-}
-else
-{}
+ GPIOD_ODR.B11 = 1;
+ delay_ms(1000);
+ GPIOD_ODR.B11 = 0;
+ delay_ms(1000);
 }
 
 }

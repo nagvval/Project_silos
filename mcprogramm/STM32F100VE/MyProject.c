@@ -1,4 +1,4 @@
-#include "Digital.h"
+//#include "Digital.h"
 
 void main() {
 //GPIO Init
@@ -97,10 +97,10 @@ Delay_ms(100);
 
 while(1)
 {
-while (GPIOA_ODR.B0==1 & GPIOD_ODR.B1==1) //work no STOP and door closed
-{
-
-}
+   GPIOD_ODR.B11 = 1;
+   delay_ms(1000);
+   GPIOD_ODR.B11 = 0;
+   delay_ms(1000);
 }
 
 }
