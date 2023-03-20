@@ -1,9 +1,9 @@
 main
 	__FillZeros
-	GPIO_Digital_Input
+	GPIO_Digital_Output
 		GPIO_Config
 			GPIO_Clk_Enable
-	GPIO_Digital_Output
+	GPIO_Digital_Input
 		GPIO_Config
 	UART1_Init
 		UARTx_Init_Advanced

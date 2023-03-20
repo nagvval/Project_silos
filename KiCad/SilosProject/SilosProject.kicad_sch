@@ -6464,6 +6464,9 @@
     (path "/9652f22e-1036-457f-855d-29d770700eb3/d37eb596-bb1a-4e26-9ca1-dcbd78cb856e"
       (reference "#PWR0172") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/570bb479-c2dc-47ed-9859-183454e7c231/d521e4c1-9523-40dd-b2b0-cd18baa9ae6b"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/d584336d-fded-43e3-bd25-06e57d84ec27"
       (reference "A1") (unit 1) (value "USR-TCP232-T2") (footprint "MY_LIBRARYS:USR-TCP232-T2_MODUL")
     )

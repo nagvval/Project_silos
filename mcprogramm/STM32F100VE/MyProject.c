@@ -3,7 +3,7 @@
 void main() {
 //GPIO Init
 //Port A IN
-GPIO_Digital_Input(&GPIOA_BASE, 
+/*GPIO_Digital_Input(&GPIOA_BASE,
                    _GPIO_PINMASK_0 |    //Button "STOP"
                    _GPIO_PINMASK_1 |    //Button M1
                    _GPIO_PINMASK_2 |    //Button M2
@@ -88,7 +88,31 @@ GPIO_Digital_Output(&GPIOE_BASE,
                    _GPIO_PINMASK_12 |    //Lamp M9
                    _GPIO_PINMASK_13 |    //Lamp M10
                    _GPIO_PINMASK_14 |    //Lamp M11
-                   _GPIO_PINMASK_15);    //Lamp M12
+                   _GPIO_PINMASK_15);    //Lamp M12 */
+                   
+                   
+GPIO_Digital_Output(&GPIOD_BASE,
+                   _GPIO_PINMASK_6 |    //Lamp "STOP"
+                   _GPIO_PINMASK_7 |    //Play M1
+                   _GPIO_PINMASK_8 |    //Play M2
+                   _GPIO_PINMASK_9 |    //Play M3
+                   _GPIO_PINMASK_10 |   //Play M4
+                   _GPIO_PINMASK_11 |   //Play M5
+                   _GPIO_PINMASK_12 |   //Play M6
+                   _GPIO_PINMASK_13 |   //Play M7
+                   _GPIO_PINMASK_14 |   //Play M8
+                   _GPIO_PINMASK_15);   //Play M9 Forvard
+                   
+GPIO_Digital_Input(&GPIOE_BASE,
+                   _GPIO_PINMASK_0 |    //Button "STOP"
+                   _GPIO_PINMASK_1 |    //Button M1
+                   _GPIO_PINMASK_2 |    //Button M2
+                   _GPIO_PINMASK_3 |    //Button M3
+                   _GPIO_PINMASK_4 |    //Button M4
+                   _GPIO_PINMASK_5 |    //Button M5
+                   _GPIO_PINMASK_6 |    //Button M6
+                   _GPIO_PINMASK_7 |    //Button M7
+                   _GPIO_PINMASK_15);   //Button M8
 
 //UART Init
 UART1_Init(9600);
@@ -97,10 +121,13 @@ Delay_ms(100);
 
 while(1)
 {
+   if (GPIOE_IDR.B2=1)
+   {
    GPIOD_ODR.B11 = 1;
    delay_ms(1000);
    GPIOD_ODR.B11 = 0;
    delay_ms(1000);
+   }
 }
 
 }
