@@ -13,8 +13,8 @@ diagnostics: 134	123	Compiled Successfully	MyProject.c
 diagnostics: 0	127	All files Compiled in 63 ms	 
 hint: 0	1144	Used RX: 16 (100%)   Free RX: 0 (0%)	Used RX: 16 (100%)   Free RX: 0 (0%)
 hint: 0	1144	Static RAM (bytes): 20   Dynamic RAM (bytes): 32745	Static RAM (bytes): 20   Dynamic RAM (bytes): 32745
-hint: 0	1144	Used ROM (bytes): 2918 (1%)  Free ROM (bytes): 521370 (99%)	Used ROM (bytes): 2918 (1%)  Free ROM (bytes): 521370 (99%)
+hint: 0	1144	Used ROM (bytes): 2838 (1%)  Free ROM (bytes): 521450 (99%)	Used ROM (bytes): 2838 (1%)  Free ROM (bytes): 521450 (99%)
 diagnostics: 0	125	Project Linked Successfully	MyProject.mcpar
-diagnostics: 0	128	Linked in 156 ms	 
-diagnostics: 0	129	Project 'MyProject.mcpar' completed: 953 ms	 
-diagnostics: 0	103	Finished successfully: 20 Бер 2023, 09:48:03	MyProject.mcpar
+diagnostics: 0	128	Linked in 140 ms	 
+diagnostics: 0	129	Project 'MyProject.mcpar' completed: 922 ms	 
+diagnostics: 0	103	Finished successfully: 20 Бер 2023, 09:57:25	MyProject.mcpar
