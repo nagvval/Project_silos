@@ -29,12 +29,18 @@ NOP
 NOP
 ;MyProject.c,122 :: 		while(1)
 L_main2:
-;MyProject.c,130 :: 		}
+;MyProject.c,127 :: 		}
 L_main4:
-;MyProject.c,132 :: 		}
+;MyProject.c,130 :: 		GPIOD_ODR.B11 = 0;
+MOVS	R1, #0
+SXTB	R1, R1
+MOVW	R0, #lo_addr(GPIOD_ODR+0)
+MOVT	R0, #hi_addr(GPIOD_ODR+0)
+_SX	[R0, ByteOffset(GPIOD_ODR+0)]
+;MyProject.c,133 :: 		}
 IT	AL
 BAL	L_main2
-;MyProject.c,134 :: 		}
+;MyProject.c,135 :: 		}
 L_end_main:
 L__main_end_loop:
 B	L__main_end_loop
