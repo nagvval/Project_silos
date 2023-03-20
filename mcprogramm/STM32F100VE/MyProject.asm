@@ -29,8 +29,8 @@ NOP
 NOP
 ;MyProject.c,122 :: 		while(1)
 L_main2:
-;MyProject.c,124 :: 		if (GPIOE_IDR.B2=1)
-MOVS	R1, #1
+;MyProject.c,124 :: 		if (GPIOE_IDR.B2=0)
+MOVS	R1, #0
 SXTB	R1, R1
 MOVW	R0, #lo_addr(GPIOE_IDR+0)
 MOVT	R0, #hi_addr(GPIOE_IDR+0)
@@ -75,10 +75,10 @@ NOP
 NOP
 ;MyProject.c,130 :: 		}
 L_main4:
-;MyProject.c,131 :: 		}
+;MyProject.c,132 :: 		}
 IT	AL
 BAL	L_main2
-;MyProject.c,133 :: 		}
+;MyProject.c,134 :: 		}
 L_end_main:
 L__main_end_loop:
 B	L__main_end_loop
