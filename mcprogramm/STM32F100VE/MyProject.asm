@@ -47,14 +47,15 @@ SXTB	R1, R1
 MOVW	R0, #lo_addr(GPIOD_ODR+0)
 MOVT	R0, #hi_addr(GPIOD_ODR+0)
 _SX	[R0, ByteOffset(GPIOD_ODR+0)]
-;MyProject.c,127 :: 		delay_ms(1000);
-MOVW	R7, #45225
-MOVT	R7, #40
+;MyProject.c,127 :: 		delay_ms(3000);
+MOVW	R7, #4606
+MOVT	R7, #122
 NOP
 NOP
 L_main5:
 SUBS	R7, R7, #1
 BNE	L_main5
+NOP
 NOP
 NOP
 ;MyProject.c,128 :: 		GPIOD_ODR.B11 = 0;

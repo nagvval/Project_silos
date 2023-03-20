@@ -36,7 +36,7 @@ while(1)
  if (GPIOE_IDR.B2=0)
  {
  GPIOD_ODR.B11 = 1;
- delay_ms(1000);
+ delay_ms(3000);
  GPIOD_ODR.B11 = 0;
  delay_ms(1000);
  }
