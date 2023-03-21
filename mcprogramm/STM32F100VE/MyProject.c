@@ -121,11 +121,11 @@ Delay_ms(100);
 
 while(1)
 {
-   if (GPIOE_IDR.B2, 0,1,0)
+   if (Button(&GPIOA_IDR, 0, 1, 1))
    {
    GPIOD_ODR.B11 = 1;
    }
-   if (GPIOE_IDR.B2, 0,1,1)
+   if (Button(&GPIOA_IDR, 0, 1, 0))
    {
    GPIOD_ODR.B11 = 0;
    }

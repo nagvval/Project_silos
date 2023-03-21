@@ -29,14 +29,42 @@ NOP
 NOP
 ;MyProject.c,122 :: 		while(1)
 L_main2:
+;MyProject.c,124 :: 		if (Button(&GPIOA_IDR, 0, 1, 1))
+MOVS	R3, #1
+MOVS	R2, #1
+MOVS	R1, #0
+MOVW	R0, #lo_addr(GPIOA_IDR+0)
+MOVT	R0, #hi_addr(GPIOA_IDR+0)
+BL	_Button+0
+CMP	R0, #0
+IT	EQ
+BEQ	L_main4
+;MyProject.c,126 :: 		GPIOD_ODR.B11 = 1;
+MOVS	R1, #1
+SXTB	R1, R1
+MOVW	R0, #lo_addr(GPIOD_ODR+0)
+MOVT	R0, #hi_addr(GPIOD_ODR+0)
+_SX	[R0, ByteOffset(GPIOD_ODR+0)]
 ;MyProject.c,127 :: 		}
 L_main4:
+;MyProject.c,128 :: 		if (Button(&GPIOA_IDR, 0, 1, 0))
+MOVS	R3, #0
+MOVS	R2, #1
+MOVS	R1, #0
+MOVW	R0, #lo_addr(GPIOA_IDR+0)
+MOVT	R0, #hi_addr(GPIOA_IDR+0)
+BL	_Button+0
+CMP	R0, #0
+IT	EQ
+BEQ	L_main5
 ;MyProject.c,130 :: 		GPIOD_ODR.B11 = 0;
 MOVS	R1, #0
 SXTB	R1, R1
 MOVW	R0, #lo_addr(GPIOD_ODR+0)
 MOVT	R0, #hi_addr(GPIOD_ODR+0)
 _SX	[R0, ByteOffset(GPIOD_ODR+0)]
+;MyProject.c,131 :: 		}
+L_main5:
 ;MyProject.c,133 :: 		}
 IT	AL
 BAL	L_main2
